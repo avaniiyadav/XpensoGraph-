@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Chart.js library for expense analysis charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>MoneyMonitor 💸</h2>
+    <div class="container">
+        <!-- Input field for entering expense description -->
+        <input type="text" id="desc" placeholder="Expense Description">
+        
+        <!-- Input field for entering expense amount -->
+        <input type="number" id="amount" placeholder="Amount">
+        
+        <!-- Dropdown menu to select expense category -->
+        <select id="category">
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Other">Other</option>
+        </select>
+        
+        <!-- Button to add the expense -->
+        <button onclick="addExpense()">Add Expense</button>
+
+        <!-- Displays the total expense amount -->
+        <h3>Total: ₹<span id="total">0</span></h3>
+
+        <!-- Expense table to display recorded expenses -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="expense-list"></tbody> <!-- Expense list will be dynamically populated here -->
+        </table>
+
+        <!-- Expense Analysis section with charts -->
+        <h3>Expense Analysis</h3>
+        <canvas id="barChart"></canvas> <!-- Bar chart for expense visualization -->
+        <canvas id="lineChart"></canvas> <!-- Line chart for expense trends -->
+    </div>
+
+    <!-- External JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

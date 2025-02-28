@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* General body styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #9fd3c7;
+    padding: 20px;
+}
+
+/* Container for the expense tracker */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #ececec;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the main heading */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #385170;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* Styling for input fields, select dropdown, and buttons */
+input, select, button {
+    width: 97%;
+    padding: 12px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the add expense button */
+button {
+    background-color: #385170;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Styling for the expense table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Styling for table header and cells */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* Styling for table header */
+th {
+    background: #142d4c;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Styling for delete button inside table */
+td button {
+    background: linear-gradient(135deg, #ff4b5c, #d90429);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 2px 4px 10px rgba(217, 4, 41, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* Delete button hover effect */
+td button:hover {
+    background: linear-gradient(135deg, #d90429, #ff4b5c);
+    transform: scale(1.1);
+    box-shadow: 3px 6px 15px rgba(217, 4, 41, 0.5);
+}
+
+/* Delete button active (click) effect */
+td button:active {
+    transform: scale(0.95);
+    box-shadow: 1px 2px 5px rgba(217, 4, 41, 0.3);
+}
+
+/* Adding a small delete icon (optional) */
+td button::before {
+    content: "🗑️";
+    font-size: 16px;
+}
+
+
+/* Styling for charts (bar and line) */
+canvas {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
