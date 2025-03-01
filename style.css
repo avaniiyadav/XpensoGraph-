@@ -15,7 +15,9 @@ body {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    overflow-x: auto; /* Allow horizontal scrolling */
 }
+
 
 /* Styling for the main heading */
 h2 {
@@ -40,7 +42,9 @@ input, select, button {
     border-radius: 6px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* Prevents extra width issues */
 }
+
 
 /* Styling for the add expense button */
 button {
