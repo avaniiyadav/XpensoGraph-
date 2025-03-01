@@ -16,8 +16,8 @@
 - **Library Used**: Chart.js for graphical analysis  
 - **Storage**: LocalStorage for saving expenses  
 
-## 📸 Screenshots  
-_(Add some screenshots of your app here for better understanding!)_  
+💻 Try it out here: 👉 Live Demo 
+https://xpensograph.netlify.app/
 
 ## 📦 Installation & Usage  
 1️⃣ Clone this repository:  
